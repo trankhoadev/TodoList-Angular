@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-add {
+    h3 {
+        background-color: #8D30F3;
+        color: #fff;
+        height: 40px;
+        border-radius: 3px;
+        padding: 0 17px;
+    }
+
+    .add-task {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        input {
+            margin: 2em 0;
+            padding: 0px 17px;
+        }
+
+        .button-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                margin: 0px auto !important;
+                text-align: center;
+                margin: 1.5em;
+                padding: 5px 15px;
+            }
+        }
+    }
+}

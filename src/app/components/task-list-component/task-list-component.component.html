@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-list">
+        <h3>Task List</h3>
+
+        <div class="list-task" *ngFor="let data of arrTask">
+            <div class="list-item">
+                <input type="text" readonly class="form-control" id="{{data.id}}" value="{{data.task}}">
+                <button class="btn btn-success" id="{{data.id}}" (click) = 'removeTask($event)' >Remove Task</button>
+            </div>
+        </div>
+
+        <div class="btn-add">
+                <button class="btn btn-success" (click)="showHideFormAdd()" #btnAdd>{{text}}</button>
+        </div>
+
+    </div>
+
+    <app-task-add-component *ngIf="check" (myClick)="pushToArray($event)"></app-task-add-component>
+</body>
+</html>

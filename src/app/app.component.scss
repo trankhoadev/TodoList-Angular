@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    &:focus {
+        outline: 0;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+$font-01: 'Muli', sans-serif;
+$s1 : .5s;
+$m-01: #7681A4;
+$m-02: #5D698D;
+
+$c-01: #10182F;
+$c-02: #545D7A;
+$c-03: #306BF3;
+
+
+$g-01: linear-gradient(140deg, $m-01, $m-02);
+
+$neu-01: #F7F8FC;
+$neu-02: #DAE1F5;
+$neu-03: #6F7073;
+$neu-04: #505050;
+$neu-05: #403E3E;
+@mixin container {
+  width: 70%;
+  height: 100%;
+  margin: 0px auto;
+}
+@mixin lg {
+    @media screen and (max-width: 1180px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width: 799px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media screen and (max-width: 511px) {
+        @content;
+    }
+}
+
+::selection {
+    background-color: #7681a4;
+    color: #fff;
+}
+
+.container {
+    width: 70%;
+    margin: 0px auto;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

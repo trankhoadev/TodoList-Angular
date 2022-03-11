@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-add">
+        <h3>Add Task</h3>
+
+        <div class="add-task">
+            <input id="data-input" type="text" class="form-control" (keyup) = "saveData($event)">
+            <div class="button-wrapper">
+                <button class="btn btn-success" (click) = "callEvent()" (click) = "createMessage(input)">Add Task</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
